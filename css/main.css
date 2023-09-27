@@ -1,0 +1,10 @@
+/* @import './css/styles.css'; */
+@import "./reset.css";
+@import "./header.css";
+@import "./container.css";
+@import "./hero.css";
+@import "./features.css";
+@import "./services.css";
+@import "./team.css";
+@import "./customers.css";
+@import "./footer.css";
