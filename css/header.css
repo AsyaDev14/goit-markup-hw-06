@@ -32,7 +32,7 @@
 }
 
 .logo-span {
-  color:#2E2F42;
+  color: #2E2F42;
   font-family: Raleway;
   font-size: 18px;
   font-style: normal;
@@ -82,7 +82,7 @@
 }
 
 .header-adress {
- display: none;
+  display: none;
 }
 
 .adress-link {
@@ -100,137 +100,178 @@
   color: #404bbf;
 }
 
- .adress-list {
-   display: flex;
-   gap: 40px;
- }
+.adress-list {
+  display: flex;
+  gap: 40px;
+}
 
- /* mobile-menu */
- .mobile-menu {
-   position: fixed;
-   width: 100%;
-   height: 100%;
-   top: 0;
-   left: 0;
-   background-color: #fff;
-   opacity: 0;
-   visibility: hidden;
-   pointer-events: none;
- }
+/* mobile-menu */
+/* .mobile-menu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+} */
 
- .button-mobile-open {
-   padding: 0;
-   background-color: transparent;
-   width: 32px;
-   height: 22px;
-   border: none;
- }
+.button-mobile-open {
+  padding: 0;
+  background-color: transparent;
+  width: 32px;
+  height: 22px;
+  border: none;
+}
 
- .mobile-open-icon {
-   stroke: #2E2F42;
- }
+.mobile-open-icon {
+  stroke: #2E2F42;
+}
 
- .is-open {
-   opacity: 1;
-   visibility: visible;
-   pointer-events: auto;
- }
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
 
- .button-mobile-close {
-   position: absolute;
-   top: 24px;
-   right: 24px;
-   padding: 0;
-   line-height: 0;
-   border-radius: 50%;
-   border: 1px solid rgba(0, 0, 0, 0.1);
-   width: 24px;
-   height: 24px;
-   background-color: transparent;
+.button-mobile-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  padding: 0;
+  line-height: 0;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
 
- }
+}
 
- .mobile-wrapper {
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   width: 100vw;
-   height: 100vh;
-   padding: 80px 35px 40px 40px;
- }
+.mobile-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
+  padding: 80px 35px 40px 40px;
+}
 
- .mobile-item {
-   margin-bottom: 40px;
-   font-size: 36px;
-   font-weight: 700;
-   line-height: 1.11;
-   letter-spacing: 0.72px;
- }
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
- .mobile-link {
-   color: #2E2F42;
- }
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
 
- .current-mobile {
-   color: #404BBF;
- }
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
 
- .mobile-menu .navigation,
- .mobile-menu .contacts {
-   margin-bottom: auto;
- }
+  background-color: #FFFFFF;
+  z-index: 999;
 
- .mobile-info-link-tel {
-   color: #4D5AE5;
-   font-size: 36px;
-   font-style: normal;
-   font-weight: 700;
-   line-height: 40px;
-   letter-spacing: 0.72px;
-   text-transform: capitalize;
- }
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
 
- .mobile-info-link-mail {
-   color: #434455;
-   font-size: 20px;
-   font-weight: 500;
-   line-height: 1.2;
-   letter-spacing: 0.4px;
-   font-style: normal;
- }
+.menu-container.is-open {
+  transform: translateX(0);
+}
 
- .mobile-info-item:not(:last-child) {
-   margin-bottom: 40px;
- }
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #fff;
+}
 
- .mobile-icon-list {
-   display: flex;
-   /* gap: 56px; */
-   justify-content: space-between;
- }
+.mobile-item {
+  margin-bottom: 40px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.72px;
+}
 
- .mobile-socials {
-   margin-top: 48px;
- }
+.mobile-link {
+  color: #2E2F42;
+}
 
- .mobile-icon {
-   width: 40px;
-   height: 40px;
- }
+.current-mobile {
+  color: #404BBF;
+}
 
- .mobile-icon-link {
-   width: 100%;
-   height: 100%;
-   background-color: #4D5AE5;
-   border-radius: 50%;
-   display: flex;
-   align-items: center;
-   justify-content: center;
- }
+.mobile-menu .navigation,
+.mobile-menu .contacts {
+  margin-bottom: auto;
+}
 
- .socials-icons {
-   fill: #F4F4FD;
- }
+.mobile-info-link-tel {
+  color: #4D5AE5;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+}
+
+.mobile-info-link-mail {
+  color: #434455;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+  font-style: normal;
+}
+
+.mobile-info-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.mobile-icon-list {
+  display: flex;
+  /* gap: 56px; */
+  justify-content: space-between;
+}
+
+.mobile-socials {
+  margin-top: 48px;
+}
+
+.mobile-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.mobile-icon-link {
+  width: 100%;
+  height: 100%;
+  background-color: #4D5AE5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socials-icons {
+  fill: #F4F4FD;
+}
 
 
 /* tablet */
@@ -240,37 +281,52 @@
     gap: 40px;
   }
 
- .header-adress {
+  .header-adress {
     display: block;
     font-style: normal;
-   /* margin-left: 332px; */
- }
+    /* margin-left: 332px; */
+  }
+
+  .adress-list {
+    display: inline-block;
+  }
+
+  .adress-link {
+    padding: 0;
+  }
+
+  .adress-link:not(:last-child) {
+    margin-bottom: 12px;
+  }
 
   .button-mobile-open {
     display: none;
   }
 
-  .button-mobile-open{
+  .button-mobile-open {
     display: none;
   }
 
-  .adress-list{
-    display: inline-block;
+  .mobile-menu {
+    display: none;
   }
 
-  .adress-link {
-    padding: 12px 0;
+  .menu-toggle {
+    display: none;
+  }
+
+  .menu-container {
+    display: none;
   }
 }
 
 /* desctop */
-@media screen and (min-width: 1158px){
+@media screen and (min-width: 1158px) {
   .adress-list {
-      display: flex;
-    }
-  
-    .adress-link {
-      padding: 24px 0;
-    }
-}
+    display: flex;
+  }
 
+  .adress-link {
+    padding: 24px 0;
+  }
+}

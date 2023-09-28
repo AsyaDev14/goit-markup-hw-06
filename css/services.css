@@ -1,0 +1,29 @@
+.services-section {
+  display: none;
+}
+
+@media screen and (min-width: 1158px) {
+  .services-section {
+    display: block;
+    padding-bottom: 120px;
+    }
+  
+    .servise-title {
+      margin-bottom: 72px;
+      font-size: 36px;
+      line-height: 1.11;
+      text-align: center;
+      letter-spacing: 0.02em;
+      text-transform: capitalize;
+      color: #2e2f42;
+    }
+  
+    .servise-list {
+      display: flex;
+      gap: 24px;
+    }
+  
+    .servise-item {
+      width: calc((100% - 48px) / 3);
+    }
+}
