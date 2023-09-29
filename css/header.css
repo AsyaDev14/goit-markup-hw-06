@@ -244,10 +244,18 @@
   margin-bottom: 40px;
 }
 
-.mobile-icon-list {
-  display: flex;
-  /* gap: 56px; */
-  justify-content: space-between;
+@media screen and (min-width:320px)and (max-width:427px){
+  .mobile-icon-list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width:428px){
+  .mobile-icon-list{
+    gap: 56px;
+    display: flex;
+  }
 }
 
 .mobile-socials {
