@@ -55,9 +55,9 @@
 }
 
 /* tablet */
-@media screen and (min-width: 768px) and (max-width: 1158px) {
+@media screen and (min-width: 767px) and (max-width: 1157px) {
   .customers-container {
-    width: 584px;
+    min-width: 584px;
     margin: 0 auto;
   }
 
